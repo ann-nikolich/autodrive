@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Delivery</title>
+</head>
+<body>
+    <div class="container">
+        <button type="button" onclick="show('block')" class="button button__mos">Заказать в Москву</button>
+        <button type="button" onclick="show('block')" class="button button__spb">Заказать в Санкт-Петербург</button>
+        <div onclick="show('none')" id="gray"></div>
+        <div id="wrapper">
+            <div class="window">
+                <h2 class="form-header">Заказать звонок</h2>
+                <form action="#" method="POST" class="form">
+                    <div class="form-part">
+                        <label class="label">Имя*
+                            <input type="text" name="name" required class="form-input" placeholder="Иван Иванов">
+                          </label>
+                    </div>
+                    <div class="form-part">
+                        <label class="label">Телефон*
+                            <input type="tel" name="phone" required class="form-input" placeholder="+7 (___) ___-__-__">
+                          </label>
+                    </div>
+                    <div class="form-part">
+                        <label class="label">Email*
+                            <input type="text" name="name" required class="form-input" placeholder="you@example.com">
+                          </label>
+                    </div>
+                    <div class="form-part">
+                        <label class="label">Город*
+                            <select name="city" class="form-input">
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            </select>
+                          </label>
+                    </div>
+                    <div class="form-part">
+                        <button type="submit" class="button form-button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
