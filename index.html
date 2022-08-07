@@ -15,7 +15,7 @@
         <div id="wrapper">
             <div class="window">
                 <h2 class="form-header">Заказать звонок</h2>
-                <form action="#" method="POST" class="form">
+                <form action="http://hh.autodrive-agency.ru/test-tasks/front/task7/" method="POST" class="form">
                     <div class="form-part">
                         <label class="label">Имя*
                             <input type="text" name="name" required class="form-input" placeholder="Иван Иванов">
@@ -28,14 +28,15 @@
                     </div>
                     <div class="form-part">
                         <label class="label">Email*
-                            <input type="text" name="name" required class="form-input" placeholder="you@example.com">
+                            <input type="text" name="email" required class="form-input" placeholder="you@example.com">
                           </label>
                     </div>
                     <div class="form-part">
                         <label class="label">Город*
-                            <select name="city" class="form-input">
+                            <select name="city_id" class="form-input">
                                 <option value="Москва">Москва</option>
                                 <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Казань">Казань</option>
                             </select>
                           </label>
                     </div>
@@ -47,5 +48,14 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+ 
+    <script>
+        $(function() {
+            $('.plugin__input_jmp').mask('+7(000)000-00-00');
+        });
+    </script>
 </body>
 </html>
